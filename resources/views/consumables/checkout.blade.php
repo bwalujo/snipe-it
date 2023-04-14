@@ -66,6 +66,15 @@
                 </div>
               </div>
             @endif
+            
+          <!-- Quantity -->
+          <div class="form-group">
+            <label class="col-sm-3 control-label">Quantity</label>
+            <div class="col-sm-1">
+              <input class="form-control" type="number" name="quantity" id="quantity" min="1">
+            </div>
+          </div>
+          
           <!-- Note -->
           <div class="form-group {{ $errors->has('note') ? 'error' : '' }}">
             <label for="note" class="col-md-3 control-label">{{ trans('admin/hardware/form.notes') }}</label>
